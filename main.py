@@ -67,11 +67,23 @@ def readFileAndSumNums(name_of_file):
         file.close()
         print(f"Sum of {content} is {result}")
 
+def addContact():
+    if __name__ == '__main__':
+        name_of_contact = input("Enter name of contact -> ")
+        file = open(name_of_contact, 'w')
+        phone_of_contact = input("Enter phone number of contact -> ")
+        file.write(phone_of_contact)
+        file.close()
 
-#
+
 # createFile()
 # createFileWithNums()
-readFileAndSumNums("nnnm.txt")
+# readFileAndSumNums("nnnm.txt")
 
 
 
+def appContactsBoook():
+    addContact()
+
+
+appContactsBoook()
